@@ -1,5 +1,5 @@
 let numberOfGuests = +prompt("Enter the number of your guests, please:");
-function restaurantSeats() {
+function restaurantSeats(numberOfGuests) {
   if (numberOfGuests > 8) {
     return "No way, we can not be place your guests";
   }
@@ -50,4 +50,4 @@ function restaurantSeats() {
   // }
   // return result;
 }
-console.log(restaurantSeats());
+console.log(restaurantSeats(numberOfGuests));

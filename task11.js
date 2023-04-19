@@ -2,7 +2,7 @@ const numberOfOrders = +prompt("Enter the number of your orders:");
 let firstPoint = 1;
 let secondPoint = 1;
 let currentPoint = 0;
-function coffeeShop() {
+function coffeeShop(numberOfOrders) {
   if (numberOfOrders === 1 || numberOfOrders === 2) {
     return 1;
   } else {
@@ -14,4 +14,4 @@ function coffeeShop() {
     return currentPoint;
   }
 }
-console.log(coffeeShop());
+console.log(coffeeShop(numberOfOrders));

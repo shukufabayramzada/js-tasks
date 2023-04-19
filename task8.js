@@ -37,7 +37,7 @@ const teens = [
 const onesDigit = number % 10;
 const tensDigit = (number - onesDigit) / 10;
 
-function convertingNumber() {
+function convertingNumber(number) {
   if (number < 10 || number > 99 || isNaN(number)) {
     return "This is invalid input. Please enter a number between 10 and 99.";
   }
@@ -52,4 +52,4 @@ function convertingNumber() {
 
   return tens[tensDigit] + " " + ones[onesDigit];
 }
-console.log(convertingNumber());
+console.log(convertingNumber(number));

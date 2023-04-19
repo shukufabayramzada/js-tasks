@@ -4,7 +4,7 @@ const numberOfOrders = prompt("Enter the number of orders:");
 let amountOfOrders = [];
 let count = 0;
 
-function discount() {
+function discount(name, age, numberOfOrders, amountOfOrders) {
   for (let i = 1; i <= numberOfOrders; i++) {
     amountOfOrders[i] = Number(
       prompt(`Enter the amount of your orders: ${i}:`)
@@ -20,4 +20,4 @@ function discount() {
     return `You have no discount`;
   }
 }
-console.log(discount());
+console.log(discount(name, age, numberOfOrders, amountOfOrders));

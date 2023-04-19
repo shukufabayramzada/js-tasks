@@ -2,7 +2,7 @@ const tempFirst = +prompt("Enter the first temperature");
 const tempSecond = +prompt("Enter the second temperature");
 const tempThird = +prompt("Enter the third temperature");
 
-function descendingOrder() {
+function descendingOrder(tempFirst,tempSecond,tempThird) {
   if (tempThird > tempSecond) {
     if (tempSecond > tempFirst) {
       console.log(`${tempThird}, ${tempSecond}, ${tempFirst}`);
@@ -25,4 +25,4 @@ function descendingOrder() {
     }
   }
 }
-descendingOrder();
+descendingOrder(tempFirst,tempSecond,tempThird);

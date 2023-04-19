@@ -4,7 +4,8 @@ const length = +prompt("Enter the length of object:");
 const weight = +prompt("Enter the weight of object:");
 const distance = +prompt("Enter the distance of delivery");
 let sum = width + height + length;
-function shipService() {
+
+function shipService(width, height, length, weight, distance) {
   if (
     sum <= 150 &&
     width <= 100 &&
@@ -19,4 +20,4 @@ function shipService() {
     return `The shipping service does not accept this order `;
   }
 }
-console.log(shipService());
+console.log(shipService(width, height, length, weight, distance));

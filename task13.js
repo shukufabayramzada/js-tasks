@@ -5,7 +5,7 @@ let twentyNotes = 0;
 let tenNotes = 0;
 let fiveNotes = 0;
 let oneNotes = 0;
-function getBanknotes() {
+function getBanknotes(amount) {
   if (amount >= 100) {
     hundredNotes = Math.floor(amount / 100);
     amount -= hundredNotes * 100;
@@ -51,4 +51,4 @@ function getBanknotes() {
   }
   return result;
 }
-console.log(getBanknotes());
+console.log(getBanknotes(amount));
